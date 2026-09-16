@@ -11,11 +11,25 @@ using namespace std;
 int main() {
 	const double PI = 3.141592653589793;
 	double v1, v2, y, w;
-	double r = 3.7;
-	double l = 16.4;
-	double t = 1.6; // Если оставить это значение, то результат различается c искомым почти ровно в 100 раз
-	double f = 335.0;
-	double rad = f * PI / 180.0;
+	double r; // 3.7
+	double l; // 16.4
+	double t; // 1.6 Если оставить это значение, то результат различается c искомым почти ровно в 100 раз
+	double f; // 335.0
+	double rad;
+
+	cout << "r = ";
+	cin >> r;
+
+	cout << "l = ";
+	cin >> l;
+
+	cout << "t = ";
+	cin >> t;
+
+	cout << "f = ";
+	cin >> f;
+
+	rad = f * PI / 180.0;
 
 	y = asin(r * sin(rad) / l);
 
@@ -26,7 +40,6 @@ int main() {
 
 	cout << "v1: " << v1 << "\n";
 	cout << "v2: " << v2 << "\n";
-	cout << "y: " << y << "\n";
 	cout << "w: " << w << "\n";
 
 }
