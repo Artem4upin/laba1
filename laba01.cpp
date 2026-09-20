@@ -38,8 +38,7 @@ int main() {
 	
 	w = (-(r * pow(rad, 2)) / pow(t, 2)) * (cos(rad) + ( r * cos(2 * rad)) / (l));
 
-	cout << "v1: " << v1 << "\n";
-	cout << "v2: " << v2 << "\n";
-	cout << "w: " << w << "\n";
-
+	cout << "v1: " << v1 << endl 
+		<< "v2: " << v2 << endl 
+		<< "w: " << w << endl;
 }
