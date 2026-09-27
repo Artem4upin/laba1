@@ -1,11 +1,12 @@
-﻿/**************
-* Вариант 10. *
-* Чупин Артем *
-* Линейные    *
-**************/
+﻿/******************************
+* Автор:   Чупин Артем        *
+* Задание: Линейные алгоритмы *
+* Вариант: 10                 *
+******************************/
 
 #include <iostream>
 #include <cmath>
+
 using namespace std;
 
 int main() {
@@ -30,15 +31,12 @@ int main() {
 	cin >> f;
 
 	rad = f * PI / 180.0;
-
 	y = asin(r * sin(rad) / l);
-
 	v1 = (-((r * rad) / t) * (sin(rad + y) / cos(y)));
 	v2 = (-((r * rad) / t) * (sin(rad) + ((r * sin(rad) * cos(rad)) / l)));
-	
-	w = (-(r * pow(rad, 2)) / pow(t, 2)) * (cos(rad) + ( r * cos(2 * rad)) / (l));
+	w = (-(r * pow(rad, 2.0)) / pow(t, 2.0)) * (cos(rad) + ( r * cos(2.0 * rad)) / (l));
 
 	cout << "v1: " << v1 << endl 
-		<< "v2: " << v2 << endl 
-		<< "w: " << w << endl;
+		 << "v2: " << v2 << endl 
+		 << "w: "  << w  << endl;
 }
